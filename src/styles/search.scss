@@ -1,0 +1,29 @@
+.input-default {
+  background-color: $background-color-lo !important;
+  border: none !important;
+  height: 70px !important;
+  font-size: 24px !important;
+  color: #707070 !important;
+}
+
+.btn-custom {
+  background-color: $primary-color;
+  border-radius: 4px;
+  font-size: 22px;
+  color: $background-color-lo;
+  padding: 16px 40px;
+  border: none !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .input-default {
+    font-size: 20px !important;
+  }
+  .btn-custom {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}

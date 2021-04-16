@@ -1,32 +1,18 @@
+import React, { Fragment } from "react";
 import { Provider } from "react-redux";
-import logo from "./logo.svg";
-import "./styles/global.css";
-
 import configureStore from "./store/index";
+import SearchPage from "./views/search";
 const store = configureStore();
 
 function App() {
   return (
-    <>
+    <Fragment>
       <Provider store={store}>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
+        <div className="app-header">
+          <SearchPage />
         </div>
       </Provider>
-    </>
+    </Fragment>
   );
 }
 
