@@ -1,19 +1,15 @@
-import React, { Fragment } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-
-const Search = React.lazy(() => import("./search"));
+import React from "react";
+import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom";
+import Search from "./search";
 
 const AppStack = ({ match }) => {
   return (
-    <Fragment>
+    <BrowserRouter>
       <Switch>
-        <Route
-          path={`${match.url}/search`}
-          render={(props) => <Search {...props} />}
-        />
-        <Redirect to="/search" />
+        <Route path="/search" component={Search} />
+        <Redirect to="/search" component={Search} />
       </Switch>
-    </Fragment>
+    </BrowserRouter>
   );
 };
 

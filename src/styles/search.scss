@@ -3,18 +3,39 @@
   border: none !important;
   height: 70px !important;
   font-size: 24px !important;
-  color: #707070 !important;
+  color: $text-color !important;
 }
 
-.btn-custom {
+.icon-custom {
   background-color: $primary-color;
-  border-radius: 4px;
   font-size: 22px;
+  border-radius: 4px;
   color: $background-color-lo;
-  padding: 16px 40px;
+  padding: 16px;
   border: none !important;
 }
 
+.autocomplete-content {
+  background-color: $background-color-lo !important;
+  margin-top: 32px;
+  width: 96.5%;
+}
+
+.clickable-item {
+  display: flex;
+  transition: 0.3s;
+  border-bottom: 1px solid $background-color;
+  width: 100% !important;
+}
+
+.clickable-item :hover {
+  background-color: $background-color;
+}
+
+.search-item {
+  padding: 10px 48px;
+  width: 100%;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
@@ -23,6 +44,7 @@
   }
   .btn-custom {
     font-size: 16px;
+    padding: 16px;
     margin-top: 20px;
     width: 100%;
   }

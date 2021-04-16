@@ -7,3 +7,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
+.label-color {
+  color: $text-color !important;
+}
+
+.btn-custom {
+  background-color: $primary-color;
+  border-radius: 4px;
+  font-size: 22px;
+  color: $background-color-lo;
+  padding: 16px 40px;
+  border: none !important;
+}

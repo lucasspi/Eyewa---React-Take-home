@@ -33,6 +33,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -47,5 +51,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div id="dz-root"></div>
+    <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+    <script>
+      DZ.init({
+        appId: "473522",
+        channelUrl: "http://localhost:3000/",
+      });
+    </script>
   </body>
 </html>
