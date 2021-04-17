@@ -13,7 +13,7 @@ function SongsList(props) {
     return (
       <Row className="container justify-content-start align-items-start w-100 mt-5 mb-5 animate__animated animate__fadeInDown">
         <Colxx md="3">
-          <img alt="song-image" src={props.album.cover_medium} />
+          <img alt="song" src={props.album.cover_medium} />
         </Colxx>
         <Colxx md="9">
           <p className="album-track-label">{props.album.title}</p>

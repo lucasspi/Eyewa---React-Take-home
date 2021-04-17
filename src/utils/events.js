@@ -1,7 +1,7 @@
 var events = {};
 var hOP = events.hasOwnProperty;
 
-export default {
+const event = {
   remove(event) {
     // Provide handle back for removal of event
 
@@ -36,3 +36,5 @@ export default {
     });
   },
 };
+
+export default event;
