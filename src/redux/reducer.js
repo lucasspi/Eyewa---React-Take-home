@@ -1,7 +1,19 @@
-import { GET_ARTISTS, SET_SEARCH } from "./actions/types";
+import {
+  SET_SEARCH,
+  GET_ARTISTS,
+  GET_ALBUMS,
+  SET_CURRENT_ARTIST,
+  SET_CURRENT_ALBUM,
+  GET_ALBUM_SONGS,
+  SET_SONG
+} from "./actions/types";
 const initState = {
-  artists: [],
   search: "",
+  artists: [],
+  artist: {},
+  albums: null,
+  album: {},
+  songs: null,
 };
 
 const reducer = (state = initState, action) => {
@@ -16,6 +28,36 @@ const reducer = (state = initState, action) => {
       return {
         ...state,
         search: action.payload,
+      };
+    }
+    case GET_ALBUMS: {
+      return {
+        ...state,
+        albums: action.payload,
+      };
+    }
+    case SET_CURRENT_ARTIST: {
+      return {
+        ...state,
+        artist: action.payload,
+      };
+    }
+    case SET_CURRENT_ALBUM: {
+      return {
+        ...state,
+        album: action.payload,
+      };
+    }
+    case SET_SONG: {
+      return {
+        ...state,
+        songs: action.payload,
+      };
+    }
+    case GET_ALBUM_SONGS: {
+      return {
+        ...state,
+        songs: action.payload,
       };
     }
 

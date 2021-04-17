@@ -19,6 +19,7 @@
   background-color: $background-color-lo !important;
   margin-top: 32px;
   width: 96.5%;
+  z-index: 3;
 }
 
 .clickable-item {
@@ -35,6 +36,32 @@
 .search-item {
   padding: 10px 48px;
   width: 100%;
+}
+
+.album-label {
+  font-size: 18px;
+  color: $primary-color;
+}
+
+.album-track-label {
+  font-size: 24px;
+  color: $primary-color;
+}
+
+.date-label {
+  font-size: 14px;
+  color: $text-color;
+}
+
+.track-label {
+  font-size: 14px;
+  color: white;
+  padding: 12px;
+}
+.track-bg {
+
+  border-bottom: 2px solid $background-color;
+  background-color: $background-color-lo !important;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
