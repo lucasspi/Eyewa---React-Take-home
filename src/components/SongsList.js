@@ -11,7 +11,7 @@ function SongsList(props) {
   };
   if (props.songs && props.songs.length > 0)
     return (
-      <Row className="container justify-content-start align-items-start w-100 mt-5 mb-5 animate__animated animate__fadeInUp">
+      <Row className="container justify-content-start align-items-start w-100 mt-5 mb-5 animate__animated animate__fadeInDown">
         <Colxx md="3">
           <img src={props.album.cover_medium} />
         </Colxx>

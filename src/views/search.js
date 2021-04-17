@@ -19,8 +19,8 @@ function SearchPage() {
     <Fragment>
       <SearchComponent />
       <AlbumsList />
-      <SongsList />
       <div ref={myRef} />
+      <SongsList />
     </Fragment>
   );
 }
