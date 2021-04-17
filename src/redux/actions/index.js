@@ -16,7 +16,7 @@ export const getArtists = (search) => (dispatch) => {
 };
 
 export const getAlbums = (artistId) => (dispatch) => {
-  DZ.api(`/artist/${artistId}/albums?limit=12`, (res) =>
+  DZ.api(`/artist/${artistId}/albums?limit=8`, (res) =>
     dispatch({ type: GET_ALBUMS, payload: res.data })
   );
 };

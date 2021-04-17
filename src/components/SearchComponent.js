@@ -29,7 +29,7 @@ const SearchComponent = (props) => {
   };
 
   return (
-    <Row className="container justify-content-center align-items-start w-100 mt-5">
+    <Row className="container justify-content-center align-items-start w-100 mt-5 mb-5 ">
       <Colxx md="10" sm="9" xxs="12">
         <Input
           bsSize="lg"

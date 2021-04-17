@@ -16,11 +16,11 @@ function AlbumsList(props) {
   if (props.albums && props.albums.length > 0) {
     return (
       <Row className="container justify-content-center align-items-start w-100">
-        <Colxx>
+        <Colxx >
           <p className="label-color mv-4">
             Search results for {props.artist.name}
           </p>
-          <Row>
+          <Row className="align-items-start">
             {props.albums.map((item) => (
               <Colxx
                 onClick={() => handleAlbums(item)}
